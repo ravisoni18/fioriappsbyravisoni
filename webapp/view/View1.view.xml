@@ -1,0 +1,128 @@
+   <mvc:View
+	controllerName="project1.controller.View1"
+	xmlns="sap.m"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:f="sap.f"
+	xmlns:card="sap.f.cards"
+	xmlns:core="sap.ui.core"
+    xmlns:forms="sap.ui.layout.form"
+	displayBlock="true"
+	height="100%">
+	<f:Card class="sapUiMediumMargin" width="300px" >
+		<f:header>
+			<card:Header 
+                press=".onClickCard"
+				title="Sales Order Data"
+				subtitle="Enter Sales Order Filter"
+				iconSrc="sap-icon://chart" />
+		</f:header>
+		<f:content >
+			<VBox
+				>
+                <forms:SimpleForm editable="true" layout="ColumnLayout">
+
+		<core:Title text="General"/>
+
+		<Label text="Enter Duration"/>
+	<DateRangeSelection
+				width="100%"
+                displayFormat="dd.MM.yyyy"
+				valueState="{valueState}"
+				valueStateText="{valueStateText}"/>
+		<Label text="Select Customer"/>
+		<Input
+			id="productInput"
+			textFormatMode="ValueKey"
+			placeholder="Enter Customer"
+			showSuggestion="true"
+			showTableSuggestionValueHelp="false"
+			suggestionRows="{/ProductCollection}"
+			suggestionItemSelected=".onSuggestionItemSelected">
+			<suggestionColumns>
+				<Column
+					popinDisplay="Inline"
+					demandPopin="true">
+					<Label text="Name" />
+				</Column>
+				<Column
+					hAlign="Center"
+					popinDisplay="Inline"
+					demandPopin="true"
+					minScreenWidth="Tablet">
+					<Label text="Product ID" />
+				</Column>
+				<Column
+					hAlign="Center"
+					popinDisplay="Inline"
+					minScreenWidth="Tablet">
+					<Label text="Supplier Name" />
+				</Column>
+				<Column
+					hAlign="End"
+					popinDisplay="Inline"
+					demandPopin="true">
+					<Label text="Price" />
+				</Column>
+			</suggestionColumns>
+
+			<suggestionRows>
+				<ColumnListItem>
+					<Label text="{Name}" />
+					<Label text="{ProductId}" />
+					<Label text="{SupplierName}" />
+					<Label text="{
+						parts:[{path:'Price'}, {path:'CurrencyCode'}],
+						type: 'sap.ui.model.type.Currency',
+						formatOptions: {showMeasure: true}
+					}" />
+				</ColumnListItem>
+			</suggestionRows>
+		</Input>
+
+		<Label text="Job title"/>
+		<Input value="Developer"/>
+
+	</forms:SimpleForm>
+
+					
+				<Button text="Default"
+						press="onPress"
+						ariaDescribedBy="defaultButtonDescription genericButtonDescription">
+					<layoutData>
+						<FlexItemData growFactor="3"  />
+					</layoutData>
+				</Button>
+				
+
+			</VBox>
+		</f:content>
+	</f:Card>
+
+	<f:Card class="sapUiMediumMargin" width="300px">
+		<f:header>
+			<card:Header title="Project Cloud Transformation" subtitle="Revenue per Product | EUR" />
+		</f:header>
+		<f:content>
+			<List
+				showSeparators="None"
+				items="{
+					path: 'DataModel>/ProductCollection'
+				}" growing="true"
+		growingThreshold="6"
+		growingScrollToLoad="false"  >
+				<CustomListItem>
+					<HBox alignItems="Center" justifyContent="SpaceBetween">
+						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
+							<Title level="H3" text="{DataModel>Name}" />
+							<Text text="{DataModel>SupplierName}" />
+						</VBox>
+						<ObjectStatus
+							class="sapUiTinyMargin sapUiSmallMarginEnd"
+							text="{DataModel>ProductId}"
+							 />
+					</HBox>
+				</CustomListItem>
+			</List>
+		</f:content>
+	</f:Card>
+</mvc:View>
