@@ -109,7 +109,7 @@
 					path: 'DataModel>/ProductCollection'
 				}" growing="true"
 		growingThreshold="4"
-		growingScrollToLoad="false" >
+		growingScrollToLoad="false"  >
 				<CustomListItem>
 					<HBox alignItems="Center" justifyContent="SpaceBetween">
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
