@@ -13,7 +13,7 @@
 			<card:Header 
                 press=".onClickCard"
 				title="Sales Order Data"
-				subtitle="Enter Sales Order Filter 2"
+				subtitle="Enter Sales Order Fi"
 				iconSrc="sap-icon://chart" />
 		</f:header>
 		<f:content >
