@@ -176,7 +176,7 @@
 	</f:Card>
 
 
-	<f:Card class="sapUiMediumMargin" width="600px">
+	<f:Card class="sapUiMediumMargin" width="300px">
 		<f:header>
 			<card:Header title="Sales by Customers Chart" subtitle="Sales Revenue by Customers | EUR" />
 		</f:header>
