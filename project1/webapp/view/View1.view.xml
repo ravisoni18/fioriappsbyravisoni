@@ -1,7 +1,10 @@
    <mvc:View
 	controllerName="project1.controller.View1"
 	xmlns="sap.m"
+		xmlns:smc="sap.ui.comp.smartmicrochart"
 	xmlns:mvc="sap.ui.core.mvc"
+			xmlns:mc="sap.suite.ui.microchart"
+
 	xmlns:f="sap.f"
 	xmlns:card="sap.f.cards"
 	xmlns:core="sap.ui.core"
@@ -23,7 +26,7 @@
 
 		<core:Title text="General"/>
 
-		<Label text="Enter Duration"/>
+		<Label text="Enter Duration" />
 	<DateRangeSelection
 				width="100%"
                 displayFormat="dd.MM.yyyy"
@@ -123,6 +126,48 @@
 					</HBox>
 				</CustomListItem>
 			</List>
+		</f:content>
+	</f:Card>
+	<f:Card class="sapUiMediumMargin" width="300px">
+		<f:header>
+			<card:Header title="Project Cloud Transformation" subtitle="Revenue per Product | EUR" />
+		</f:header>
+		<f:content>
+				<Panel headerText="{/description}"
+				 class="sapUiSmallMarginBottom">
+				<mc:LineMicroChart
+						color="{color}"
+						showPoints="{showPoints}"
+						size="L"
+						threshold="{/threshold}"
+						showThresholdLine="{/showThresholdLine}"
+						leftTopLabel="{/leftTopLabel}"
+						leftBottomLabel="{/leftBottomLabel}"
+						rightTopLabel="{/rightTopLabel}"
+						rightBottomLabel="{/rightBottomLabel}"
+						showTopLabels="{showTopLabels}"
+						showBottomLabels="{showBottomLabels}"
+						press="press"
+						class="sapUiTinyMarginTop"
+						lines="{
+							path: '/lines',
+							templateShareable: true
+						}">
+					<mc:lines>
+						<mc:LineMicroChartLine
+								points="{
+								path: 'points',
+								templateShareable: true
+							}"
+								color="{color}"
+								showPoints="{showPoints}"
+								type="{type}"
+								>
+							<mc:LineMicroChartPoint x="{x}" y="{y}"/>
+						</mc:LineMicroChartLine>
+					</mc:lines>
+				</mc:LineMicroChart>
+		</Panel>
 		</f:content>
 	</f:Card>
 </mvc:View>

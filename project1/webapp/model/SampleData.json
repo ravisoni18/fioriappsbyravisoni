@@ -1,0 +1,55 @@
+{
+    "description": "Sales Growth - 2021",
+    "leftTopLabel": "120 M",
+    "rightTopLabel": "140 M",
+    "leftBottomLabel": "Sept 2021",
+    "rightBottomLabel": "Oct 2021",
+    "color": "Error",
+    "threshold": null,
+    "showThresholdLine": false,
+    "showTopLabels": false,
+    "size":"L",
+    "showBottomLabels": false,
+    "lines": [
+      {
+        "points": [
+          {"x": 0, "y": 50},
+          {"x": 8, "y": 68},
+          {"x": 20, "y": 25},
+          {"x": 30, "y": 45},
+          {"x": 40, "y": 67},
+          {"x": 100, "y": 88}
+        ],
+        "color": "Neutral",
+        "type": "Solid"
+      },
+      {
+        "points": [
+          {"x": 2, "y": 55},
+          {"x": 8, "y": 40},
+          {"x": 15, "y": 20},
+          {"x": 30, "y": 75},
+          {"x": 40, "y": 30},
+          {"x": 70, "y": 30},
+          {"x": 80, "y": 35},
+          {"x": 100, "y": 50}
+        ],
+        "showPoints": true,
+        "type": "Dashed"
+      },
+      {
+        "points": [
+          {"x": 0, "y": 30},
+          {"x": 8, "y": 30},
+          {"x": 15, "y": 30},
+          {"x": 30, "y": 50},
+          {"x": 40, "y": 30},
+          {"x": 70, "y": 40},
+          {"x": 80, "y": 50},
+          {"x": 100, "y": 60}
+        ],
+        "showPoints": true,
+        "type": "Dotted"
+      }
+    ]
+  }

@@ -10,9 +10,16 @@ sap.ui.define([
         return Controller.extend("project1.controller.View1", {
             onInit: function () {
 
-                var oModel = new sap.ui.model.json.JSONModel();
-              oModel.loadData("/model/product.json");
+                var oModel = new sap.ui.model.json.JSONModel("/model/product.json");
+            //   oModel.loadData("/model/product.json");
               this.getView().setModel(oModel, "DataModel");
+
+            //   var oDefaultModel = new sap.ui.model.json.JSONModel();
+            //   oDefaultModel.loadData("/model/SampleData.json");
+              var oModel = new sap.ui.model.json.JSONModel("/model/SampleData.json");
+              this.getView().setModel(oModel);
+            //   this.getView().setModel(oDefaultModel);
+
 
 
             }
