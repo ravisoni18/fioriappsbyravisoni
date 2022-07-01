@@ -14,9 +14,16 @@ sap.ui.define(
 
         //   var oDefaultModel = new sap.ui.model.json.JSONModel();
         //   oDefaultModel.loadData("/model/SampleData.json");
+     
+        //   this.getView().setModel(oDefaultModel);
+        
+      },
+      onPress:function (){
+
         var oModel = new sap.ui.model.json.JSONModel("./model/SampleData.json");
         this.getView().setModel(oModel);
-        //   this.getView().setModel(oDefaultModel);
+
+        
         var oVizFrame = this.oVizFrame = this.getView().byId("idVizFrame");
         oVizFrame.setVizProperties({
             legend: {
@@ -38,7 +45,7 @@ sap.ui.define(
 
         var dataModel = new sap.ui.model.json.JSONModel("./model/medium.json");
         oVizFrame.setModel(dataModel);
-      },
+      }
     });
   }
 );
