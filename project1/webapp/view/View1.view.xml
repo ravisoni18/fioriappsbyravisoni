@@ -120,12 +120,12 @@
 				<CustomListItem>
 					<HBox alignItems="Center" justifyContent="SpaceBetween">
 						<VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
-							<Title level="H3" text="{DataModel>Name}" />
-							<Text text="{DataModel>SupplierName}" />
+							<Title level="H3" text="{DataModel>SO}" />
+							<Text text="Customer - {DataModel>SupplierName}" />
 						</VBox>
 						<ObjectStatus
 							class="sapUiTinyMargin sapUiSmallMarginEnd"
-							text="{DataModel>ProductId}"
+							text="Material - {DataModel>ProductId}"
 							 />
 					</HBox>
 				</CustomListItem>
