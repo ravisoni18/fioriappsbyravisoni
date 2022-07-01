@@ -1,6 +1,7 @@
 {
 	"ProductCollection": [
 		{
+			"SO": "100000010",
 			"ProductId": "HT-1000",
 			"Category": "Laptops",
 			"MainCategory": "Computer Systems",
@@ -23,6 +24,8 @@
 			"DimUnit": "cm"
 		},
 		{
+			"SO": "100000011",
+
 			"ProductId": "HT-1001",
 			"Category": "Laptops",
 			"MainCategory": "Computer Systems",
@@ -45,6 +48,8 @@
 			"DimUnit": "cm"
 		},
 		{
+			"SO": "100000012",
+
 			"ProductId": "HT-1002",
 			"Category": "Laptops",
 			"MainCategory": "Computer Systems",
@@ -67,6 +72,8 @@
 			"DimUnit": "cm"
 		},
 		{
+			"SO": "100000013",
+
 			"ProductId": "HT-1003",
 			"Category": "Laptops",
 			"MainCategory": "Computer Systems",
@@ -89,6 +96,8 @@
 			"DimUnit": "cm"
 		},
 		{
+			"SO": "100000014",
+
 			"ProductId": "HT-1007",
 			"Category": "Accessories",
 			"MainCategory": "Computer Components",
@@ -111,6 +120,8 @@
 			"DimUnit": "cm"
 		},
 		{
+			"SO": "100000015",
+
 			"ProductId": "HT-1010",
 			"Category": "Accessories",
 			"MainCategory": "Computer Systems",
@@ -133,6 +144,8 @@
 			"DimUnit": "cm"
 		},
 		{
+			"SO": "100000016",
+
 			"ProductId": "HT-1011",
 			"Category": "Laptops",
 			"MainCategory": "Computer Systems",
@@ -155,6 +168,8 @@
 			"DimUnit": "cm"
 		},
 		{
+			"SO": "100000017",
+
 			"ProductId": "HT-1020",
 			"Category": "Accessories",
 			"MainCategory": "Computer Components",
@@ -177,6 +192,8 @@
 			"DimUnit": "cm"
 		},
 		{
+			"SO": "100000018",
+
 			"ProductId": "HT-1021",
 			"Category": "Accessories",
 			"MainCategory": "Computer Components",
@@ -199,6 +216,8 @@
 			"DimUnit": "cm"
 		},
 		{
+			"SO": "100000019",
+
 			"ProductId": "HT-1022",
 			"Category": "Accessories",
 			"MainCategory": "Computer Components",

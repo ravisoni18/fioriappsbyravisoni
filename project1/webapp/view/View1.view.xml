@@ -20,7 +20,7 @@
 			<card:Header 
                 press=".onClickCard"
 				title="Sales Order Data"
-				subtitle="Enter Sales Order Fi"
+				subtitle="Enter Sales Order Filters"
 				iconSrc="sap-icon://chart" />
 		</f:header>
 		<f:content >
@@ -74,9 +74,9 @@
 
 			<suggestionRows>
 				<ColumnListItem>
-					<Label text="{Name}" />
-					<Label text="{ProductId}" />
-					<Label text="{SupplierName}" />
+					<Label text="{SO}" />
+					<Label text="Material - {ProductId}" />
+					<Label text="Cust - {SupplierName}" />
 					<Label text="{
 						parts:[{path:'Price'}, {path:'CurrencyCode'}],
 						type: 'sap.ui.model.type.Currency',
