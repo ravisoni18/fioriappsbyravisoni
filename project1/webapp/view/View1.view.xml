@@ -125,9 +125,9 @@
 						</VBox>
 						<ObjectStatus
 							class="sapUiTinyMargin sapUiSmallMarginEnd"
-							text="Price - {DataModel>Price} EUR" 
+							text="{DataModel>Price} EUR" 
 							 />
-							 
+
 					</HBox>
 				</CustomListItem>
 			</List>
