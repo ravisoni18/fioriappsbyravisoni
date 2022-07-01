@@ -107,7 +107,7 @@
 
 	<f:Card class="sapUiMediumMargin" width="300px">
 		<f:header>
-			<card:Header title="Project Cloud Transformation" subtitle="Revenue per Product | EUR" />
+			<card:Header title="Sales Orders" subtitle="Sales Orders | EUR" />
 		</f:header>
 		<f:content>
 			<List
@@ -125,8 +125,9 @@
 						</VBox>
 						<ObjectStatus
 							class="sapUiTinyMargin sapUiSmallMarginEnd"
-							text="Material - {DataModel>ProductId}"
+							text="Price - {DataModel>Price} EUR" 
 							 />
+							 
 					</HBox>
 				</CustomListItem>
 			</List>
